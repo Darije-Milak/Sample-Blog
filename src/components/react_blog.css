@@ -1,0 +1,601 @@
+/* css for scripttic challange blog 0.1 */
+
+body
+{
+    padding: 0;
+    padding: 0;
+}
+
+        /* ===== START -- ultility classes ===== */
+        .show_comp
+        {
+            display: block;
+        }
+
+        .hide_comp
+        {
+        display: none;
+        }
+        /* ===== END -- ultility classes =====*/
+
+
+/* ===== START -- CSS for LOGIN screen ===== */
+.login_logo
+{
+    width: 85px;
+}
+
+.blog_login
+{
+    width: 400px;
+    height: 400px;
+    background-color: #220042;
+    color: #ffffff;
+    margin: 75px auto 20px auto; 
+    padding: 25px 0 0 0;
+
+}
+
+.blog_login_email_label,
+.blog_login_password_label 
+{
+    color: #ffffff;
+    margin: 20px auto 0 auto; 
+}
+
+.blog_login_email,
+.blog_login_password
+{
+    display: block;
+    width: 300px;
+    color: #000000;
+    margin: 0 auto 0 auto;
+    background-color: #dddddd;
+    padding: 2px;
+    outline: none;
+    font-weight: bold;
+}
+
+.blog_login_email
+{
+    position: relative;
+}
+
+.blog_login_new_user
+{
+    margin: 50px 0 0 0;
+}
+/* ===== END -- CSS for LOGIN screen ===== */
+
+
+        /* ===== START -- CSS for SIGNIN screen ===== */
+        .blog_signin
+        {
+            width: 400px;
+            height: 550px;
+            background-color: #220042;
+            color: #ffffff;
+            margin: 75px auto 20px auto; 
+            padding: 25px 0 0 0;
+        }
+
+        .blog_signin_firstname_label,
+        .blog_signin_lastname_label,
+        .blog_signin_email_label,
+        .blog_signin_password_label 
+        {
+            color: #ffffff;
+            margin: 20px auto 0 auto; 
+        }
+
+        .blog_signin_firstname,
+        .blog_signin_lastname,
+        .blog_signin_email,
+        .blog_signin_password
+        {
+            display: block;
+            width: 300px;
+            color: #000000;
+            margin: 0 auto 0 auto;
+            background-color: #ddbbdd;
+            padding: 2px;
+            outline: none;
+            font-weight: bold;
+        }
+
+        .blog_signin_already_user
+        {
+            margin: 50px 0 0 0;
+        }
+        /* ===== END -- CSS for SIGNIN screen ===== */
+
+/* ===== START -- CSS FOR BLOG Header ===== */
+.blog_header_container
+{
+    width: 100%;
+    height: 75px;
+    background-color: #220042;
+    color:#ffffff;
+
+}
+
+.blog_header_logo
+{
+    width: 118px;
+    display: block;
+    float: left;
+}
+
+.blog_header_moto
+{
+    display: block;
+    float: left;
+    width: 130px;
+    height: 75px;
+    line-height: 75px;
+}
+
+@media screen and (max-width: 560px)
+{
+    .blog_header_moto
+    {
+        display: none;
+    }   
+}
+
+.blog_header_user_tools
+{
+    float: left;
+    margin: 0 0 0 20px;
+}
+
+.blog_header_change_name,
+.blog_header_change_password
+{
+    display: flex;
+    width: 80px;
+    height: 75px;
+    float: left;
+    line-height: 1;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+}
+
+.blog_header_change_name:hover,
+.blog_header_change_password:hover
+{
+    color: #220042;
+    background-color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.blog_header_login_widget
+{
+    width: 160px;
+    height: 75px;
+    float: right;
+}
+
+.blog_header_login_widget_text,
+.blog_header_login_widget_buttons,
+.blog_header_widget_username
+{
+    width: 100%;
+    height: 50%;
+    padding: 0;
+}
+
+
+
+.blog_header_login_widget_text
+{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.blog_header_login_widget_buttons
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn.blog_header_login_button,
+.btn.blog_header_signin_button
+{
+    width: 40%;
+    height: 60%;
+    padding: 0; 
+    margin: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 20px
+}
+
+.btn.blog_header_login_button:hover,
+.btn.blog_header_signin_button:hover
+{
+    background-color: #2e0131;
+    color: #ffffff;
+}
+
+.btn.blog_header_login_button
+{
+    background-color: #ffffff;
+}
+/* ===== END  -- CSS FOR BLOG Header =====*/
+
+
+        /* ===== START  -- CSS FOR BLOG Articles ===== */
+        .articles_container
+        {
+            width: 100%;
+            height: auto;
+            background-color: #eeeeee;
+            padding: 0 0 15px 0;
+        }
+
+        .article_container
+        {
+            background-color: #dddddd;
+            margin: 0 0 10px 0;
+            padding: 0 0 15px 0;
+        }
+
+        .article_title,
+        .article_body
+        {
+            width: 95%;
+            padding: 0 3px; 
+            margin: 0 auto;
+        }
+
+
+        .article_title
+        {
+            height: auto;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        .article_body
+        {
+            height: auto;
+            background-color: #ffffff;
+            color: #2e0131;
+            text-align: justify;
+        }
+
+        .article_edit_buttons
+        {
+            display: grid;
+            justify-content: flex-end;
+            width: 95%;
+            margin: 0 auto;
+            grid-template-columns: 20% 20% 20% 20% 20%;
+        }
+
+        .article_load_comments_button,
+        .article_edit_button,
+        .article_delete_button
+        {
+            margin: 5px;
+        }
+
+        .article_edit_button
+        {
+            grid-column: 4;
+        }
+
+        .article_delete_button
+        {
+            grid-column: 5;
+            margin-right: 0;
+        }
+
+        .article_load_comments_button
+        {
+            margin-left: 0;
+        }
+
+        .article_post_comment_button
+        {
+            margin: 5px;
+        }
+        /* ===== END  -- CSS FOR BLOG Articles ===== */
+    
+/* ===== START  -- CSS FOR BLOG Edit Article ===== */
+
+.edit_article_container
+{
+    width: 100%;
+    height: auto;
+    margin: 10px auto;
+    padding: 15px 0;
+    background-color: #ddbbdd;
+}
+
+.edit_article_title_label
+{
+    width: 6%;
+    height: auto;
+    display: inline-block;
+    margin-bottom:  10px;
+    padding: 0;
+    text-align: left;
+    font-weight:bold;
+    font-size: 18px;
+}
+
+.edit_article_title_input
+{
+    width: 89%;
+    display: inline-block;
+    margin-bottom:  10px;
+    border: none;
+}
+
+.edit_article_textarea
+{
+    width: 95%;
+    height: 100px;
+    padding: 2px;
+    resize: none;
+    border: none;
+}
+
+.edit_article_submit_button
+{
+    color: #ffffff;
+    background-color: #220042;
+    font-weight: bold;
+}
+
+.edit_article_change_button
+{
+    color: #ffffff;
+    background-color: #880042;
+    font-weight: bold;
+}
+
+/* ===== END  -- CSS FOR BLOG Edit Article ===== */
+
+        /* ===== START  -- CSS FOR Article Comments ===== */
+
+        .comment_container
+        {
+            display: grid;
+            background-color: #cc9900;
+            width: 95%;
+            margin: 0 auto 5px auto;
+            padding: 5px;
+            grid-template-columns: 20% 80%;
+        }
+
+        .comment_poster_name
+        {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            background-color: #dddddd;
+            margin: 5px;
+            min-height: 50px;
+        }
+
+        .comment_body
+        {
+            background-color: #eeddee;
+            margin: 5px;
+        }
+
+        .comment_edit_buttons
+        {
+
+            grid-column: span 2;
+            display: grid;
+            margin: 5px;
+            grid-template-columns: 20% 20% 20% 20% 20%;
+        }
+
+        .comment_edit_comment
+        {
+            margin: 0 5px 0 0 ;
+        }
+
+        .comment_delete_comment
+        {
+            grid-column: 5;
+            margin: 0 0 0 5px;
+
+        }
+
+        .comment_modal
+        {
+            position: absolute;
+            width: 50%;
+            padding: 10px;
+            height: auto;
+            background-color: #44aa44;
+            color: #ffffff;
+            font-weight: bold;
+            font-size: 20px;
+            left: 25%;
+        }
+
+        .comment_edit_comment_textarea
+        {
+            font-size: 14px;
+            width: 100%;
+            margin: 0 auto;
+            height: 110px; 
+            background-color: #dddddd;
+            resize: none;
+        }
+
+        .comment_edit_buttons_wrapper
+        {
+            display: grid;
+            grid-template-columns: 20% 20% 20% 20% 20%; 
+        }
+
+        .comment_confirm_edit_comment
+        {
+            grid-column: 1;
+        }
+
+        .comment_cancel_edit_comment
+        {
+            grid-column: 5;
+        }
+
+        /* ===== END  -- CSS FOR Article Comments ===== */
+
+.all_article_comments
+{
+    margin : 5px;
+}
+
+/* ===== START  -- CSS FOR Post New Comment form ===== */
+
+.post_commnet_container
+{
+    display:grid;
+    grid-template-columns: 100%;
+    width: 80%;
+    background-color: #99aa99; 
+    padding: 10px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 24px;
+    margin: 0 auto 0 auto;
+
+}
+
+.post_comment_body_label
+{
+    width: auto;
+    text-align: left;
+    padding: 0 0 15px 0;
+}
+
+.post_comment_body
+{
+    font-size: 18px;
+    border-radius: 5px;
+    height: 120px;
+    resize: none;
+}
+
+.btn.post_comment_button
+{
+    width: 125px;
+    margin: 5px 0 0 0;
+    border: 1px solid #ffffff;
+}
+/* ===== END  -- CSS FOR Post New Comment form ===== */
+
+
+        /* ===== START  -- CSS FOR Change User Name form ===== */
+
+        .change_user_container
+        {
+            margin: 20px auto 20px auto;
+            padding: 30px;
+            width: 500px;
+            height: 400px;
+            background-color: #4a018f;
+            color: #ffffff;
+        }
+
+        .change_user_email_label,
+        .change_user_first_name_label,
+        .change_user_last_name_label 
+        {
+            width: 400px;
+            height: auto;
+            font-size: 20px;
+            /* color: #ffffff; */
+            text-align: left;
+            margin: 15px auto 5px auto;
+        }
+
+        .change_user_email,
+        .change_user_first_name,
+        .change_user_last_name
+        {
+            width: 400px; 
+        }
+
+        .change_user_buttons
+        {
+            display: grid;
+            margin: 40px auto 0 auto;
+            width: 400px;
+            grid-template-columns: 25% 25% 25% 25%;
+        }
+
+        .change_user_change_button
+        {
+            grid-column: 1;
+        }
+
+        .change_user_cancel_button
+        {
+            grid-column: 4;
+        }
+
+        /* ===== END  -- CSS FOR Change User Name form ===== */
+
+/* ===== START  -- CSS FOR Change User Password form ===== */
+
+.change_password_container
+{
+    margin: 20px auto 20px auto;
+    padding: 30px;
+    width: 500px;
+    height: 400px;
+    background-color: #38002a;
+    color: #ffffff;
+}
+
+.change_password_old_label,
+.change_password_new_label
+{
+    width: 400px;
+    height: auto;
+    font-size: 20px;
+    text-align: left;
+    margin: 15px auto 5px auto;
+}
+
+.change_password_old,
+.change_password_new
+{
+    width: 400px; 
+}
+
+.change_password_buttons
+{
+    display: grid;
+    margin: 120px auto 0 auto; 
+    width: 400px;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.change_password_change_button
+{
+    grid-column: 1;
+}
+
+.change_password_cancel_button
+{
+    grid-column: 4;
+}
+
+/* ===== END  -- CSS FOR Change User Password form ===== */
